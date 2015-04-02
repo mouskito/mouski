@@ -1,0 +1,25 @@
+menu_homepage:
+    path:     /
+    defaults: { _controller: ArticleGeneralBundle:Default:index }
+
+menu_about:
+    path:     /about
+    defaults: { _controller: ArticleGeneralBundle:Default:about }
+
+
+menu_message:
+    path:     /message
+    defaults: { _controller: ArticleGeneralBundle:Default:message }
+
+
+
+menu_lastQuestion:
+    path:     /lastQuestion
+    defaults: { _controller: ArticleGeneralBundle:Default:lastQuestion }
+
+
+
+
+menu_ajout:
+    path:     /
+    defaults: { _controller: ArticleGeneralBundle:Default:ajouter }

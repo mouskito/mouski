@@ -1,0 +1,49 @@
+article_general_homepage:
+    path:     /
+    defaults: { _controller: ArticleGeneralBundle:Default:index }
+
+article_general:
+    path:     /about
+    defaults: { _controller: ArticleGeneralBundle:Default:about }
+
+
+article_general_forum:
+    path:     /forum
+    defaults: { _controller: ArticleGeneralBundle:Default:forum }
+
+
+
+article_general_lastQuestion:
+    path:     /lastQuestion
+    defaults: { _controller: ArticleGeneralBundle:Default:lastQuestion }
+
+
+
+
+article_general_ajouter:
+    path:     /ajouter
+    defaults: { _controller: ArticleGeneralBundle:Default:ajouter }
+
+
+
+
+article_general_voir:
+    path:     /{id}/voir
+    defaults: { _controller: ArticleGeneralBundle:Default:voir }
+    requirements:
+        id: \d+
+
+
+# user_user_inscription:
+#     path:     /inscription
+#     defaults: { _controller: UserUserlBundle:Registration:inscription }
+
+
+article_general_contact:
+    path:     /contact
+    defaults: { _controller: ArticleGeneralBundle:Default:contact }
+
+
+article_general_equipe:
+    path:     /equipe
+    defaults: { _controller: ArticleGeneralBundle:Default:equipe }

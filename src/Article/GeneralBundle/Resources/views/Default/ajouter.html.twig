@@ -1,0 +1,27 @@
+{% block nav %}{% include '::knp_menu_html.html.twig' %} {% endblock %}
+
+        {% block body %}
+<div class ="content">
+
+<div id="question" >
+Posez une question 
+<script src="{{ asset('js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+
+<form action="{{ path("article_general_ajouter") }}" method="post">
+    
+    {{form_widget(form)}}
+{{ app.user.username }}
+    <input type="submit">
+</form>
+
+</div>
+
+
+</div>
+        {% endblock %}
+
+        {% block javascripts %}{% endblock %}
+{% block footer %}{% include '::footer.html.twig' %}
+        {% endblock %}
+
+ 

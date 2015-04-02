@@ -1,0 +1,43 @@
+{% block nav %}{% include '::knp_menu_html.html.twig' %}
+        {% endblock %}
+{{ knp_menu_render('sidebar') }}
+        {% block body %}
+      <div class ="content">
+      <table class="table table-striped alert alert-success" role="alert">
+<CAPTION> Voici le titre du tableau </CAPTION> 
+  <TR class="alert alert-info"> 
+ <TH> Sujets </TH> 
+ <TH> Questions </TH> 
+ <TH> Date </TH> 
+ <TH> Reponse</TH> 
+ <TH> </TH> 
+     </TR>    
+     {% for questions in Questions %}
+<TR class="alert alert-info">
+   <TD>
+                    
+                  <a href="{{ path ("article_general_voir", {id: questions.id} )}}"> {{ questions.titre}}
+                 </TD>   
+                     <TD>
+                        <a href="{{ path ("article_general_voir", {id: questions.id} )}}"> {{ questions.Description }} 
+                     </TD>
+                 
+                     <TD>
+                         {{ questions.date|date('d - M - Y') }}
+                     </TD>
+                     <TD>  de 
+                        {{ questions.pseudo }} 
+                     </TD>
+                       <TD>  de 
+                       
+                     </TD>
+
+</TR>  
+
+            {% endfor %}
+ </TABLE>        
+{% endblock %}
+
+</div>
+{% block footer %}{% include '::footer.html.twig' %}
+        {% endblock %}

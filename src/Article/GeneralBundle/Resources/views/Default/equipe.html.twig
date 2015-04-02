@@ -1,0 +1,129 @@
+{% block nav %}{% include '::knp_menu_html.html.twig' %} {% endblock %}
+
+
+        {% block body %}
+<div id="equipe" >
+Equipe
+<hr>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+					<script type="text/javascript">
+					$(function() {
+                                             
+							$('.cache').hide('slow');
+						
+						// Quand on entre dans un item, on affiche
+						$('.cadre ').mouseenter( function() {
+							$(this).find('.cache').show('slow');
+						});
+						 
+						// Quand on en sort, on ferme
+						$('.cadre ').mouseleave( function() {
+							$(this).find('.cache').hide('slow');
+						});
+					});
+					</script>
+
+ <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Moussa C </span><br />
+    <span class="role"> Fondateur - Representant Paris (France) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+  
+  
+  
+ <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Moussa.C</span><br />
+    <span class="role"> Fondateur - Representant New York (Amerique) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+
+  
+ 
+ <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Abdou</span><br />
+    <span class="role"> Fondateur - Representant Munich (Allemagne) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+  
+  <!-- ********** Ligne equipe du Bas ************** -->
+  
+   <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Personne 1 </span><br />
+    <span class="role"> Fondateur - Representant Paris (France) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+  
+  
+  
+ <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Personne 2 </span><br />
+    <span class="role"> Fondateur - Representant New York (Amerique) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+
+  
+ 
+ <div id= "cadre" class="cadre">
+                    
+<figure>
+                        
+<a href=""><img alt="Google+" src="{{ asset('images/Male.png') }}" class="circular hover" /></a> 
+  <figcaption class="cache">
+  <span class="nom"> Personne 1 </span><br />
+    <span class="role"> Fondateur - Representant Munich (Allemagne) </span><br />
+     <span class="description"> Dans sa tete, c'est le plus beau goss de la planete, pour lui aucune meuf ne le resiste.
+     Et tous les arabes de France sont des bledars ...</span><br />  </figcaption>
+</figure>
+ </div>
+  
+  <!-- ************  Fin de la ligne   ************ -->
+  
+</div>
+
+
+
+        {% endblock %}
+
+        {% block javascripts %}{% endblock %}
+{% block footer %}{% include '::footer.html.twig' %}
+        {% endblock %}
+
+    </body>
+</html>

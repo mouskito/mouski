@@ -1,0 +1,29 @@
+{% block nav %}{% include '::knp_menu_html.html.twig' %} {% endblock %}
+
+        {% block body %}
+            
+           <div class ="content">
+
+            <article>
+                <header>
+                    
+                    <h2> {{ question.titre}} </h2>
+                 </header>   
+                  <em>
+                        {{ question.pseudo }} 
+                     </em><hr>
+                 <div class="contents">
+                     <p>
+                        {{ question.Description }} 
+                     </p>
+                  </div>
+                         
+             </article>     
+          
+          
+{% endblock %}
+
+</div>
+        {% block javascripts %}{% endblock %}
+{% block footer %}{% include '::footer.html.twig' %}
+        {% endblock %}

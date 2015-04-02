@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+<!-- Responsive design -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Fin -->
+
+        <title>{% block title %}{% endblock %} - Article Test </title>
+
+        <link rel="stylesheet" type="text/css" href="{{
+        asset('css/bootstrap.min.css')  }}" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+        {% block nav %}{% include '::nav.html.twig' %}
+        {% endblock %}
+
+    </body>
+</html>

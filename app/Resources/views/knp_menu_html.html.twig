@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+ 
+
+{% block body %}
+
+<nav class="navbar navbar-default" role="navigation" id='bar'>
+<ul  id="menu-nav" class="nav nav-pill" >
+    <li><a href="{{path('article_general_homepage')}}"> Accueil </a></li>
+
+    <li><a href="{{path('article_general_forum')}}"> Forum </a></li>
+
+    <li><a href="#">Astuces</a>
+        <ul>
+            <li><a href="{{path('article_general_ajouter')}}">Posez une question</a></li>
+            <li><a href="{{path('article_general_lastQuestion')}}">Derniéres questions</a></li>
+            
+        </ul>
+    </li>
+    <li><a href="{{path('article_general')}}">A propos</a></li>
+    <li style="float:right;"><a href="{{path('fos_user_security_login')}}">S'identifier</a></li>
+        
+</ul>
+        <strong style="float:right;">
+         <em> Pas de compte ?  Inscription </a> en 5 clics garanties 
+       </em> </strong>
+        
+<div id='titre'>
+<h1> Bienvenue </h1>
+<em id='slogan'> L'information, c'est l'oxygène des temps modernes. </em>
+</div>
+
+<!-- <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+
+<!-- Reseaux sociaux -->
+<div id="resaux">
+<a id="fcbk" href=""><img alt="Facebook" src="{{ asset('images/fcbk.png') }}" /></a><a href=""><img alt="Twitter" src="{{ asset('images/twitter.png') }}" /></a>
+<a href=""><img alt="Google+" src="{{ asset('images/google+.png') }}" /></a> 
+</div>
+</nav>
+
+{% endblock %}

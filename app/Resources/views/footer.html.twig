@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+        {% block title %} footer {% endblock %} 
+
+{% block body %}
+<div class="footer" id='footer'>
+  
+
+<ul class=" nav-justified" >
+  <li  class="active"><a href="#">Inscription</a></li>
+  <li ><a href="{{path('article_general_contact')}}">Contact</a></li>
+  <li ><a href="{{path('article_general')}}">Conditions generales</a></li>
+  <li><a href="{{path('article_general_equipe')}}">Equipe</a></li>
+</ul>
+<em > Copyright@Moussa </em>
+</div>
+
+{% endblock %}
