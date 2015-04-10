@@ -83,12 +83,6 @@ fos_user:
     firewall_name: main
     user_class: User\UserBundle\Entity\User
 
-# app/config/config.yml
-
-    registration:
-        form:
-            type: user_user_registration
-
 
 # app/config/config.yml
 knp_menu:
