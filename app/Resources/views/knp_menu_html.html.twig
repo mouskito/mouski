@@ -18,13 +18,13 @@
         </ul>
     </li>
     <li><a href="{{path('article_general')}}">A propos</a></li>
+       {% if app.user %}
+       <li class='connected'><a href=""> {{ app.user }}</a> </li>
+
+   {% else %}
     <li style="float:right;"><a href="{{path('fos_user_security_login')}}">S'identifier</a></li>
-        
+ {% endif %}
 </ul>
-        <strong style="float:right;">
-         <em> Pas de compte ?  Inscription </a> en 5 clics garanties 
-       </em> </strong>
-        
 <div id='titre'>
 <h1> Bienvenue </h1>
 <em id='slogan'> L'information, c'est l'oxygène des temps modernes. </em>

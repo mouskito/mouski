@@ -363,3 +363,16 @@ input[type=submit], input[type=reset] {
  .connect{
     background: red;
  }
+
+.register, .connected{
+    float:right; 
+    background: red;
+}
+.register img{
+    width: 20px;
+
+}
+
+.logged{
+    float: right;
+}
